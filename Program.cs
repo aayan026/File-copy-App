@@ -22,7 +22,7 @@ class Program
 
             using (FileStream fsWrite = new FileStream(destPath, FileMode.Create, FileAccess.Write))
             {
-                int len = 10; // buffer ölçüsü
+                int len = 10; 
                 byte[] buffer = new byte[len];
                 long copied = 0;
 
@@ -46,7 +46,7 @@ class Program
             }
         }
 
-        Console.WriteLine("\nKopyalama tamamlandı!");
+        Console.WriteLine("\nKopyalama tamamlandi!");
     }
 
     static void DrawProgressBar(double progress, int barSize)
